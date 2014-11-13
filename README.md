@@ -2,19 +2,19 @@
 
 Now that you know how to write some pretty advanced ruby, scrape websites, and output to the command line, you're going to make your first project from scratch. You can do whatever you want when making this project, just make sure you do a few of the follwoing:
 
-* Scrape a website
+* Scrape a website or use an API (optional. Talk to an instructor)
 * Make your application interactive (take user input and display some output)
 * Make your application object oriented
 
-As a good example of this, a past student scraped a website that had a list of [ASCII pokemon](http://ascii.co.uk/art/pokemon) and let users type the name of the pokemon they wanted to see. The program then output the ASCII Pokemon you requested.
+As a good example of this, a past student scraped a website that had a list of [ASCII pokemon](http://ascii.co.uk/art/pokemon) and let users type the name of the pokemon they wanted to see. The program then output an ASCII image of the Pokemon you requested.
 
-If you want, you can package your app as a Gem and distribute it on RubyGems! 
+When you're done, package your app as a Gem and distribute it on RubyGems! 
 
-Be creative and talk to an instructor about your project before you get started. You can do basically whatever you want as long as your project is manageable and an instructor approves it.
+Be creative and talk to an instructor about your project before you get started. You can do basically whatever you want as long as your project is manageable and an instructor approves it. 
 
 ## Setup
 
-You'll need to build this from scratch, but your project directory should be in the MVC structure and look something like this:
+You'll need to build this project from scratch, but your project directory should be structured well and look similar to other gems. You're file structure should look something like this:
 
 ```bash
 ├── Gemfile
@@ -31,35 +31,23 @@ You'll need to build this from scratch, but your project directory should be in 
     └── spec_helper.rb
 ```
 
+### `bin/run`
 The bin folder will hold your runner file which starts the program and should require only your environment file. You should be able to start your program by running `bin/run` in the command line. Remeber to put `#!/usr/bin/env ruby` at the top of your runner so that the command line knows to run it as a ruby file.
+
+### `config/environment.rb`
+The config folder should have your environment file, which should require all the other files that are needed to run your project.
+
+The spec folder should have all your specs, and should be automatically created by typing `rspec --init` in the command line. It's important to test your code, especially since you'll be distributing your app as a gem.
+
+The README should be well written, and clear. Anyone reading your readme should know exactly what your gem does, how to get it running on their comuter, and how to contribute to it. 
+
+The Licence. Github will have you a bunch of [options for licences](http://choosealicense.com). Pick one you like. 
 
 #Replace below this line with rest of lab
 
-### Gemfile
 
-Look at the labs you've done to see what gems are usually included in a Sinatra app. At the very least, it should look something like this:
-
-```ruby
-source 'https://rubygems.org'
-
-gem 'sinatra'
-gem 'shotgun'
-gem 'activerecord', :require => 'active_record'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
-gem 'require_all'
-gem 'rake'
-gem 'sqlite3'
-gem 'thin'
-gem 'pry'
-
-gem 'simplecov'
-gem 'rspec'
-gem 'capybara'
-gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
-gem 'rack-test'
 ```
 
-### `config/environment.rb`
 
 This file should be:
 

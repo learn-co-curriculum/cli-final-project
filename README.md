@@ -1,4 +1,4 @@
-# Command Line Interface Program Final Project
+# Ruby Final Project - A Command Line Interface Program
 
 Now that you know how to write some pretty advanced ruby, scrape websites, and output to and recieve input from the command line, you're going to make your first project from scratch. You can do whatever you want when making this project, just make sure you do a few of the follwoing:
 

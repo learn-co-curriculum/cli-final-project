@@ -1,7 +1,4 @@
----
-tags: ruby, final project
-language: ruby
----
+
 
 # Ruby Final Project - A Command Line Interface Program
 

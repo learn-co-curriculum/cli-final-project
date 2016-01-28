@@ -73,4 +73,4 @@ Remember to publish your app to your github account and to [RubyGems](https://ru
 
 Spec it out! Use [Simplecov](https://github.com/colszowka/simplecov) to monitor your test coverage. At this point, you should be familiar with writing some tests and definitely passing them. Use the labs as guides for how to write tests.
 
-<a href='https://learn.co/lessons/cli-final-project' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cli-final-project' title='Ruby Final Project - A Command Line Interface Program'>Ruby Final Project - A Command Line Interface Program</a> on Learn.co and start learning to code for free.</p>
